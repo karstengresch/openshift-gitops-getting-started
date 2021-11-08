@@ -4,11 +4,12 @@ OpenShift GitOps is an add-on on OpenShift which provides Argo CD and other tool
 
 This repository contains a brief Getting Started guide for trying out OpenShift GitOps.
 
-* [Install OpenShift GitOps](#install-openshift-gitops)
-* [Log into Argo CD dashboard](#log-into-argo-cd-dashboard)
-* [Configure OpenShift with Argo CD](#configure-openshift-with-argo-cd)
-* [Deploy Applications with Argo CD](#deploy-applications-with-argo-cd)
-* [Additional Argo CD instances](#additional-argo-cd-instances)
+- [Getting Started with OpenShift GitOps](#getting-started-with-openshift-gitops)
+  - [Install OpenShift GitOps](#install-openshift-gitops)
+  - [Log into Argo CD dashboard](#log-into-argo-cd-dashboard)
+  - [Configure OpenShift with Argo CD](#configure-openshift-with-argo-cd)
+  - [Deploy Applications with Argo CD](#deploy-applications-with-argo-cd)
+  - [Additional Argo CD instances](#additional-argo-cd-instances)
 
 ## Install OpenShift GitOps 
 
@@ -52,7 +53,7 @@ Enter the following details and click on **Create**.
 * Application Name: `cluster-configs`
 * Project: `default`
 * Sync Policy: `Manual`
-* Repository URL: `https://github.com/siamaksade/openshift-gitops-getting-started`
+* Repository URL: `https://github.com/karstengresch/openshift-gitops-getting-started.git`
 * Revision: `HEAD`
 * Path: `cluster`
 * Destination: `https://kubernetes.default.svc`
@@ -104,7 +105,7 @@ Create a new Argo CD application by clicking on the **New App** button in the Ar
 * Project: `default`
 * Sync Policy: `Automatic`
 * Self-heal: `checked`
-* Repository URL: `https://github.com/siamaksade/openshift-gitops-getting-started`
+* Repository URL: `https://github.com/karstengresch/openshift-gitops-getting-started.git`
 * Revision: `HEAD`
 * Path: `app`
 * Destination: `https://kubernetes.default.svc`
